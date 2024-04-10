@@ -1,6 +1,7 @@
 # misezan
 
-A new Flutter project.
+A new Flutter project
+さや香さんのネタ「見せ算」をFlutterにしてみました。
 
 ## Getting Started
 

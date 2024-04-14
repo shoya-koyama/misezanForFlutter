@@ -31,9 +31,11 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   String calculateEye(int x, int y) {
     if (x == y) {
-      return '$x見せ$yのとき、眼は1';
+      return '$x見せ$yのとき、眼は0';
     } else if ((isRepeatingChar(x.toString(), '6') && isRepeatingChar(y.toString(), '9')) || (isRepeatingChar(x.toString(), '9') && isRepeatingChar(y.toString(), '6'))) {
       return '$x見せ$yのとき、眼は11';
+    } else if ((isRepeatingChar(x.toString(), '2') && isRepeatingChar(y.toString(), '5')) || (isRepeatingChar(x.toString(), '5') && isRepeatingChar(y.toString(), '2'))) {
+      return '$x見せ$yのとき、眼は1.1';
     } else if (x == 1 && y == 100) {
       return '$x見せ$yのとき、眼は83';
     } else if (x > y) {
